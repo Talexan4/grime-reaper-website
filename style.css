@@ -1,0 +1,443 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color:whitesmoke;
+    color:green
+    font-family:Arial;
+    text-align: center;
+    margin-top: 0;
+    /*max-width:1200px;
+    margin-left:auto;
+    margin-right:auto;*/
+    padding-bottom: 200px;
+    background-size: cover;
+    background-position: Center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-blend-mode: multiply;
+    }
+    h1 {
+        font-size: 72px;
+        font-family:"Creepster",cursive;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size:25px;
+        margin-top:20px;
+    }
+    h2{
+        font-size:35px;
+        margin-top:60px;
+        font-family: Arial;
+    }
+    p{
+        margin:10px 0;
+    }
+    ul{
+        list-style: none;
+        padding-left: 0;
+        }
+    li{
+        font-size:24px;
+        margin: 10px 0;
+    }
+    #contact{
+        margin-top:80px;
+    }
+    h2{
+        border-top: 1px solid #444;
+        padding-top: 30px;
+    }
+    ul{
+        text-align: left;
+        display: inline-block;
+    }
+    #contact p{
+        font-size: 20px;
+    }
+    nav{
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    nav a {
+        display:inline-block;
+        background-color: limegreen;
+        color: black!important;
+        padding: 16px 23px;
+        margin: 10px 8px;
+        font-size: 25px;
+        text-decoration-color: blue;
+        text-decoration: none;
+        border-radius: 12px;
+    }
+    .hero-video-section{
+        position: relative;
+        overflow: hidden;
+    }
+    .hero-video{
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .hero-video-section::after{
+        content:"";
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 0;
+    }
+    .hero-video-section h1,
+    .hero-video-section h2,
+    .hero-video-section p,
+    .hero-video-section a{
+        color: white;
+    }
+    .tagline{
+        font-size: 35px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+    .hero-video-section::after{
+        pointer-events: none;
+    }
+    .residential-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        max-width: 2000px;
+        margin: 60px auto;
+        padding: 0 40px;
+        margin-bottom: 200px;
+        line-height: 2.0;
+        font-size: 40px;
+        background-color: whitesmoke;
+        color: black;
+    }
+    .residential-img {
+        width: 500px;
+        height: auto;
+        border-radius: 10px;
+    }
+    .residential-text ul{
+        padding-left: 0;
+        flex: 1;
+        color: black;
+        margin-left: 0;
+    }
+      .residential-text summary{
+        margin-left: 10px;
+        padding-left: 10px;
+        font-size: 35px;
+        font-weight: bold;
+        cursor: pointer;
+        display: list-item;
+    }
+    .residential-text li{
+        margin-left: 10px
+        padding-left: 10px;
+    }
+    .commercial-section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+        max-width: 2000px;
+        margin: 60px auto;
+        margin-bottom: 200px;
+        padding: 0 40px;
+        line-height: 2.0;
+        background-color: limegreen;
+        color: black;
+    }
+    .commercial-img{
+        width: 500px;
+        height: auto;
+        border-radius: 10px;
+
+    }
+    .commercial-text ul{
+        flex: 1;
+        color: black;        
+        padding-right: 0;
+        margin-right: 0;
+        display: list-item;
+    }
+    .commercial-text li,
+    .commercial-text details,
+    .commercial-text summary{
+        margin-left: 10px;
+        padding-left: 10px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .contact-box{
+        background-color: limegreen;
+        color: black;
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 600px;
+        margin: 120px auto 80px auto;
+        margin-top: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(255,255,255,0.2);
+        position: center;
+        top: 150px;
+        right: 20px;
+    }
+    .contact-box p{
+        margin: 10px 0;
+        font-size: 24px;
+    }
+    .contact-box strong { color: #ffffff;
+    }
+   .residential-text ul,
+   .commercial-text ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+   }
+   .residential-text li,
+   .commercial-text li{
+    font-size: 35px;
+    line-height: 1.5;
+    margin: 18px 0;
+    font-weight: 600;
+   }
+   form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 100px;
+   }
+   input{
+    width: 600px;
+    height: 30px;
+   }
+   label{
+    display: block;
+    font-size: 25px;
+   }
+   form div{
+    text-align: left;
+   }
+   form div{
+    margin-bottom: 20px;
+    margin-left: 10px;
+   }
+   textarea, select{
+    width: 600px;
+    margin-top: 5px;
+   }
+   textarea{
+    height: 100px;
+   }
+   label{
+    display: block;
+    margin-bottom: 5px;
+   }
+   form{
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+   }
+   img.quote-image{
+     width: 200px;
+     height: 5px;
+     border-radius: 10px;
+   }
+   .policy-page{
+    background-color: whitesmoke;
+    color: black;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+   }
+   .policy-page h1{
+    text-align: center;
+    margin-bottom: 30px;
+   }
+   .policy-page p,
+   .policy-page li{
+     font-size: 25px;
+     line-height: 1.7;
+  }
+   .policy-page a{
+    display: inline-block;
+    margin-bottom: 25px;
+    font-size: 20px;
+   }
+   .refunds-page{
+    background-color: whitesmoke;
+    color: black;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+   }
+   .refunds-page h1{
+    text-align: center;
+    margin-bottom: 30px;
+   }
+   .refunds-page p,
+   .refunds-page li{
+     font-size: 25px;
+     line-height: 1.7;
+  }
+   .refunds-page a{
+    display: inline-block;
+    margin-bottom: 25px;
+    font-size: 20px;
+   }
+   .terms-page{
+    background-color: whitesmoke;
+    color: black;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+   }
+   .terms-page h1{
+    text-align: center;
+    margin-bottom: 30px;
+   }
+   .terms-page p,
+   .terms-page li{
+     font-size: 25px;
+     line-height: 1.7;
+  }
+   .terms-page a{
+    display: inline-block;
+    margin-bottom:  25px;
+    font-size: 20px; 
+   }
+   *{
+    box-sizing: border-box;
+   }
+   @media(max-width: 768px){
+    .residential-section,
+    .commercial-section{
+        display: block;
+    }
+    .residential-img,
+    .commercial-img{
+        display: block;
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        margin: 0 auto 20px auto;
+   }
+   .residential-text,
+   .commercial-text{
+    display: block;
+    width: 100%;
+    text-align: left;
+   }
+   .services ul{
+    text-align:center;
+   }
+   .quote-form-box{
+     width: 95%
+     max-width: 95%
+     margin: 20px auto;
+     padding: 20px;
+   }
+   .quote-form-box input,
+   .quote-form-box textarea,
+   .quote-form-box select{
+    width:100%;
+    margin: 0 0 15px 0;
+    }
+    .quote-image{
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+    .why-power-washing{
+    background-color: limegreen;
+    color: black; 
+    padding: 40px 20px;
+    text-align: center;
+   }
+   .commercial-section h2,
+   .residential-section h2{
+    width: 100%;
+    text-align: center;
+   }
+   .commercial-section,
+   .residential-section{
+    width: 100%;
+    box-sizing: border-box;
+   }
+   .quote-btn{
+    background-color: orange;
+    color: black;
+    padding: 20px 35px;
+    font-size: 20px;
+    margin-top: 15px;
+    border-radius: 12px;
+   }
+   details{
+    margin:15px 0;
+    background-color: whitesmoke;
+    color: black;
+    padding: 12px;
+    border-radius: 8px;
+    }
+    summary{
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    .quote-form-box{
+        max-width: 900px;
+        margin: 60px auto;
+        padding: 30px;
+        background-color: #ffffff;
+        border-radius: 12px;
+        text-align: left;
+        background-color: whitesmoke;
+        border: 3px solid green;
+    }
+    .quote-form-box input,
+    .quote-form-box textarea;
+    .quote-form-box select{
+        display:block;
+        width: 75%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #CCC;
+        border-radius: 6px;
+        font-size: 16px;
+        margin: 0 auto 15px auto;
+    }
+    .quote-form-box label{
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    .quote-form-box img{
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+
+   
+   
+
+      
+      
