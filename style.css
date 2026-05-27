@@ -380,6 +380,14 @@ body{
         display: block;
         margin: 0 auto 20px auto;
     }
+     .gallery-section img{
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        border-radius: 10px;
+        margin: 15px auto;
+        display: block;
+     }
     .why-power-washing{
     background-color: #111111;
     color: white; 
