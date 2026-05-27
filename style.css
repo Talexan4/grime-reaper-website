@@ -2,8 +2,8 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color:whitesmoke;
-    color:green
+    background-color:#0d0d0d;
+    color:white;
     font-family:Arial;
     text-align: center;
     margin-top: 0;
@@ -66,14 +66,14 @@ body{
     }
     nav a {
         display:inline-block;
-        background-color: limegreen;
-        color: black!important;
+        background-color: #111111;
+        color: white!important;
         padding: 16px 23px;
         margin: 10px 8px;
         font-size: 25px;
-        text-decoration-color: blue;
         text-decoration: none;
         border-radius: 12px;
+        border: 1px solid #le90ff;
     }
     .hero-video-section{
         position: relative;
@@ -123,7 +123,7 @@ body{
         margin-bottom: 200px;
         line-height: 2.0;
         font-size: 40px;
-        background-color: whitesmoke;
+        background-color: #111111;
         color: black;
     }
     .residential-img {
@@ -159,8 +159,8 @@ body{
         margin-bottom: 200px;
         padding: 0 40px;
         line-height: 2.0;
-        background-color: limegreen;
-        color: black;
+        background-color: #111111;
+        color: white;
     }
     .commercial-img{
         width: 500px;
@@ -184,7 +184,7 @@ body{
         font-weight: bold;
     }
     .contact-box{
-        background-color: limegreen;
+        background-color:#b87400;
         color: black;
         padding: 30px;
         border-radius: 10px;
@@ -200,6 +200,7 @@ body{
     .contact-box p{
         margin: 10px 0;
         font-size: 24px;
+        
     }
     .contact-box strong { color: #ffffff;
     }
@@ -369,8 +370,8 @@ body{
         margin: 0 auto 20px auto;
     }
     .why-power-washing{
-    background-color: limegreen;
-    color: black; 
+    background-color: #111111;
+    color: white; 
     padding: 40px 20px;
     text-align: center;
    }
@@ -385,8 +386,8 @@ body{
     box-sizing: border-box;
    }
    .quote-btn{
-    background-color: orange;
-    color: black;
+    background-color: #b87401;
+    color: black !important;
     padding: 20px 35px;
     font-size: 20px;
     margin-top: 15px;
@@ -394,10 +395,11 @@ body{
    }
    details{
     margin:15px 0;
-    background-color: whitesmoke;
-    color: black;
+    background-color: #111111;
+    color: white;
     padding: 12px;
     border-radius: 8px;
+    border: 1px solid #le90ff;
     }
     summary{
         font-weight: bold;
@@ -411,8 +413,8 @@ body{
         background-color: #ffffff;
         border-radius: 12px;
         text-align: left;
-        background-color: whitesmoke;
-        border: 3px solid green;
+        background-color: #111111;
+        border: 3px solid #le90ff;
     }
     .quote-form-box input,
     .quote-form-box textarea;
@@ -434,10 +436,17 @@ body{
     .quote-form-box img{
         display: block;
         margin: 0 auto 20px auto;
-    }
+    nav a {
+        background-color: #111111;
+        color: white !important;
+        border: 1px solid #1e90ff;
+        }
 
    
    
+
+      
+      
 
       
       
