@@ -462,6 +462,15 @@ body{
         border: 1px solid #1e90ff;
         }
    }
+}
+    .featured-truck{
+        width: 90%;
+        max-width: 500px;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+    }
+   
 
    
    
