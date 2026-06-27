@@ -1,10 +1,9 @@
-    
-   html{
+html{
     scroll-behavior: smooth;
 }
 body{
-    background-color:#0d0d0d;
-    color:white;
+    background-color: #0d0d0d;
+    color: white;
     font-family:Arial;
     text-align: center;
     margin-top: 0;
@@ -124,8 +123,9 @@ body{
         margin-bottom: 200px;
         line-height: 2.0;
         font-size: 40px;
-        background-color: #111111;
-        color: black;
+        background:
+        radial-gradient(circle at center, rgba(255,80,0,.2), transparent 70%), #111111;
+        color: white;
     }
     .residential-img {
         width: 500px;
@@ -160,8 +160,10 @@ body{
         margin-bottom: 200px;
         padding: 0 40px;
         line-height: 2.0;
-        background-color: #111111;
+        background:
+        radial-gradient(circle at center, rgba(255,80,0,.2), transparent 70%), #111111;
         color: white;
+        
     }
     .commercial-img{
         width: 500px;
@@ -256,13 +258,13 @@ body{
     align-items: flex-start;
    }
    img.quote-image{
-     width: 200px;
+     width: 500px;
      height: 5px;
      border-radius: 10px;
    }
    .policy-page{
-    background-color: whitesmoke;
-    color: black;
+    background: linear-gradient(135deg,rgba(255,80,0,.25), #111111 45%, #111111 100%);
+    color: white;
     max-width: 900px;
     margin: 0 auto;
     padding: 40px;
@@ -283,8 +285,8 @@ body{
     font-size: 20px;
    }
    .refunds-page{
-    background-color: whitesmoke;
-    color: black;
+    background: linear-gradient(135deg,rgba(255,80,0,.25), #111111 45%, #111111 100%);
+    color: white;
     max-width: 900px;
     margin: 0 auto;
     padding: 40px;
@@ -305,8 +307,8 @@ body{
     font-size: 20px;
    }
    .terms-page{
-    background-color: whitesmoke;
-    color: black;
+    background: linear-gradient(135deg,rgba(255,80,0,.25), #111111 45%, #111111 100%);
+    color: white;
     max-width: 900px;
     margin: 0 auto;
     padding: 40px;
@@ -326,7 +328,7 @@ body{
     margin-bottom:  25px;
     font-size: 20px; 
    }
-   *{
+   {
     box-sizing: border-box;
    }
    .quote-btn{
@@ -362,10 +364,11 @@ body{
     text-align:center;
    }
    .quote-form-box{
-     width: 95%
-     max-width: 95%
+     width: 95%;
+     max-width: 95%;
      margin: 20px auto;
      padding: 20px;
+     background: linear-gradient(135deg,rgba(255,80,0,.25), #111111 45%, #111111 100%);
    }
    .quote-form-box input,
    .quote-form-box textarea,
@@ -374,7 +377,7 @@ body{
     margin: 0 0 15px 0;
     }
     .quote-image{
-        width: 100%;
+        width: 250px;
         max-width: 250px;
         height: auto;
         display: block;
@@ -389,7 +392,7 @@ body{
         display: block;
      }
     .why-power-washing{
-    background-color: #111111;
+        background: radial-gradient(circle at 15% 50%, rgba(255,80,0,.2), transparent 60%),#111111;
     color: white; 
     padding: 40px 20px;
     text-align: center;
@@ -426,7 +429,7 @@ body{
         font-size: 20px;
     }
     .quote-form-box{
-        max-width: 900px;
+        max-width: 350px;
         margin: 60px auto;
         padding: 30px;
         background-color: #ffffff;
@@ -439,7 +442,7 @@ body{
     .quote-form-box textarea;
     .quote-form-box select{
         display:block;
-        width: 75%;
+        width: 50%;
         padding: 12px;
         margin-bottom: 15px;
         border: 1px solid #CCC;
@@ -460,10 +463,15 @@ body{
         background-color: #111111;
         color: white !important;
         border: 1px solid #1e90ff;
-        }
-   }
-}
-     @media(max-width: 768px){
+    }
+     .pricing-section{
+        background:
+        radial-gradient(circle at center, rgba(250,80,0,.50), transparent 70%),#111111;
+        color:white;
+        padding: 40px;
+    }
+    }
+    @media(max-width: 768px){
     .featured-truck{
         width: 90%;
         max-width: 500px;
@@ -471,10 +479,21 @@ body{
         display: block;
         margin: 20px auto;
     }
+    .gallery-section{
+        background: radial-gradient(circle at 15% 50%, rgba(255,80,0,.2), transparent 60%), #111111;
     }
-   
-   
-
+    .quote-logo {
+        position: fixed;
+        top:150px;
+        right: 40px;
+        z-index: 1;
+        opacity: 0.2;
+    }
+    .quote-logo img{ 
+        width: 700px
+    }
+    }
+     
    
    
 
