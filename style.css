@@ -220,49 +220,7 @@ body{
     margin: 18px 0;
     font-weight: 600;
    }
-   form{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 100px;
-   }
-   input{
-    width: 600px;
-    height: 30px;
-   }
-   label{
-    display: block;
-    font-size: 25px;
-   }
-   form div{
-    text-align: left;
-   }
-   form div{
-    margin-bottom: 20px;
-    margin-left: 10px;
-   }
-   textarea, select{
-    width: 600px;
-    margin-top: 5px;
-   }
-   textarea{
-    height: 100px;
-   }
-   label{
-    display: block;
-    margin-bottom: 5px;
-   }
-   form{
-    display: flex;
-    gap: 40px;
-    align-items: flex-start;
-   }
-   img.quote-image{
-     width: 500px;
-     height: 5px;
-     border-radius: 10px;
-   }
-   .policy-page{
+    .policy-page{
     background: linear-gradient(135deg,rgba(255,80,0,.25), #111111 45%, #111111 100%);
     color: white;
     max-width: 900px;
@@ -363,26 +321,7 @@ body{
    .services ul{
     text-align:center;
    }
-   .quote-form-box{
-     width: 95%;
-     max-width: 95%;
-     margin: 20px auto;
-     padding: 20px;
-     background: linear-gradient(135deg,rgba(255,80,0,.25), #111111 45%, #111111 100%);
-   }
-   .quote-form-box input,
-   .quote-form-box textarea,
-   .quote-form-box select{
-    width:100%;
-    margin: 0 0 15px 0;
-    }
-    .quote-image{
-        width: 250px;
-        max-width: 250px;
-        height: auto;
-        display: block;
-        margin: 0 auto 20px auto;
-    }
+   
     .gallery-section img{
         width: 100%;
         max-width: 350px;
@@ -428,37 +367,7 @@ body{
         cursor: pointer;
         font-size: 20px;
     }
-    .quote-form-box{
-        max-width: 350px;
-        margin: 60px auto;
-        padding: 30px;
-        background-color: #ffffff;
-        border-radius: 12px;
-        text-align: left;
-        background-color: #111111;
-        border: 3px solid #le90ff;
-    }
-    .quote-form-box input,
-    .quote-form-box textarea;
-    .quote-form-box select{
-        display:block;
-        width: 50%;
-        padding: 12px;
-        margin-bottom: 15px;
-        border: 1px solid #CCC;
-        border-radius: 6px;
-        font-size: 16px;
-        margin: 0 auto 15px auto;
-    }
-    .quote-form-box label{
-        display: block;
-        margin-bottom: 5px;
-        font-weight: bold;
-    }
-    .quote-form-box img{
-        display: block;
-        margin: 0 auto 20px auto;
-    }
+    
     nav a {
         background-color: #111111;
         color: white !important;
@@ -482,16 +391,7 @@ body{
     .gallery-section{
         background: radial-gradient(circle at 15% 50%, rgba(255,80,0,.2), transparent 60%), #111111;
     }
-    .quote-logo {
-        position: fixed;
-        top:150px;
-        right: 40px;
-        z-index: 1;
-        opacity: 0.2;
-    }
-    .quote-logo img{ 
-        width: 700px
-    }
+    
     }
      
    
