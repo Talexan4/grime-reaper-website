@@ -397,6 +397,8 @@ body{
     .quote-logo img{
         width:100%;
         height: auto;
+        top:200px;
+        position:relative;
     }
     .gallery-section{
         background: radial-gradient(circle at 15% 50%, rgba(255,80,0,.2), transparent 60%), #111111;
