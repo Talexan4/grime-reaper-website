@@ -389,11 +389,11 @@ body{
         margin: 20px auto;
     }
      .quote-logo{
-      postion:absolute
-       top:250px;
-       left:0;
-        width:100%
-       opacity:.25%
+      postion:absolute !important;
+       top:250px !important;
+       left:0 !important;
+        width:100% !important;
+       opacity:.25% !important;
     }
     .quote-logo img{
         width:100%;
