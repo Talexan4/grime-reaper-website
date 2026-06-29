@@ -388,6 +388,16 @@ body{
         display: block;
         margin: 20px auto;
     }
+     .quote-logo{
+       top:250px;
+       left:0;
+        width:100%
+       opacity:.25%
+    }
+    .quote-logo img{
+        width:100%;
+        height: auto;
+    }
     .gallery-section{
         background: radial-gradient(circle at 15% 50%, rgba(255,80,0,.2), transparent 60%), #111111;
     }
