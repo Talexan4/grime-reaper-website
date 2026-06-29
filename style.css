@@ -398,7 +398,6 @@ body{
         width:100%;
         height: auto;
         top:40px;
-        position:relative;
     }
     .gallery-section{
         background: radial-gradient(circle at 15% 50%, rgba(255,80,0,.2), transparent 60%), #111111;
