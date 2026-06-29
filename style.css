@@ -389,6 +389,7 @@ body{
         margin: 20px auto;
     }
      .quote-logo{
+      postion:absolute
        top:250px;
        left:0;
         width:100%
