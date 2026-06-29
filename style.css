@@ -413,12 +413,17 @@ body{
     box-sizing: border-box;
     margin-bottom:15px;
     font-size: 18px;
+     background-dolor:rgba(255,255,255,.85);
+       border:2px solid #1e90ff;
+       border-radius:6px;
    }
    form label{
     display: block;
     margin-bottom: 5px;
     font-size: 18px;
-   }
+    color:#f2f2f2;
+    text-shadow:2px 2px 5px black; 
+    }
     h1{
     font-size: 42px !important;
    }
