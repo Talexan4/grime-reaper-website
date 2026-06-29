@@ -292,12 +292,13 @@ body{
    .quote-btn{
     display: inline-block;
     background-color: #b87401;
-    color: black !important;
     padding: 20px 35px;
     font-size: 20px;
     margin: 25px 0 40px 0;
     border-radius: 12px;
     text-decoration: none;
+    color:#f2f2f2;
+    text-shadow:2px 2px 5px black;
    }
    @media(max-width: 768px){
     .residential-section,
@@ -348,11 +349,12 @@ body{
    }
    .quote-btn{
     background-color: #b87401;
-    color: black !important;
-    padding: 20px 35px;
+     padding: 20px 35px;
     font-size: 20px;
     margin-top: 20px;
     border-radius: 12px;
+    color:#f2f2f2;
+    text-shadow:2px 2px 5px black;
    }
    details{
     margin:15px 0;
@@ -393,17 +395,18 @@ body{
        left:0;
         width:100%;
        opacity:.10%;
-        position:absolute;
+       position:absolute;
     }
     .quote-logo img{
         width:100%;
         height: auto;
         top:40px;
+    
     }
     .gallery-section{
         background: radial-gradient(circle at 15% 50%, rgba(255,80,0,.2), transparent 60%), #111111;
     }
-        form{
+     form{
         width: 95%;
         margin: 0 auto;
         font-size: 18px;
@@ -415,7 +418,7 @@ body{
     box-sizing: border-box;
     margin-bottom:15px;
     font-size: 18px;
-     background-color:rgba(255,255,255,.85);
+    background-color:rgba(255,255,255,.85);
        border:2px solid #1e90ff;
        border-radius:6px;
    }
@@ -424,16 +427,42 @@ body{
     margin-bottom: 5px;
     font-size: 18px;
     color:#f2f2f2;
-    text-shadow:2px 2px 5px black; 
-    }
+    text-shadow:2px 2px 5px black;
+   }
     h1{
     font-size: 42px !important;
    }
-    .quote-title{
+   .quote-title{
     font-size:42px !important;
    }
     }
-     
+ form{
+    max-width:750px;
+    margin:40px auto;
+ }
+ form div{
+    margin-bottom:35px;
+ }
+ label{
+    display:block;
+    font-size:24px;
+    font-weight:bold;
+    color:white;
+    margin-bottom:8px;
+     color:#f2f2f2;
+    text-shadow:2px 2px 5px black;
+ }
+ input,
+ select,
+ textarea{
+    width:100%;
+    padding:12px;
+    font-size:18px;
+    box-sizing: border-box;
+    background-color:rgba(255,255,255,.85);
+       border:2px solid #1e90ff;
+       border-radius:6px;
+ }
    
    
 
