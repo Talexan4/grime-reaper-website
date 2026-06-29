@@ -289,7 +289,7 @@ body{
    {
     box-sizing: border-box;
    }
-   .quote-btn{
+   .quote-btn,.appointment-btn{
     display: inline-block;
     background-color: #b87401;
     padding: 20px 35px;
