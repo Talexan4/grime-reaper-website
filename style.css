@@ -300,6 +300,44 @@ body{
     color:#f2f2f2;
     text-shadow:2px 2px 5px black;
    }
+   .gallery-section{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+   }
+   .gallery-section img{
+    width:250px;
+    height:auto;
+    border-radius:10px;
+   }
+   .before-after{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-bottom:40px;
+   }
+   .photo{
+    text-align:center;
+   }
+   .photo img{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+   }
+   .finished-photos{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+   }
+   .finished-photos img{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+   }
    @media(max-width: 768px){
     .residential-section,
     .commercial-section{
