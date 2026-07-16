@@ -95,7 +95,7 @@ body{
         left:0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.1);
         z-index: 0;
     }
     .hero-video-section h1,
@@ -361,14 +361,7 @@ body{
     text-align:center;
    }
    
-    .gallery-section img{
-        width: 100%;
-        max-width: 350px;
-        height: auto;
-        border-radius: 10px;
-        margin: 15px auto;
-        display: block;
-     }
+     
     .why-power-washing{
         background: radial-gradient(circle at 15% 50%, rgba(255,80,0,.2), transparent 60%),#111111;
     color: white; 
@@ -473,8 +466,19 @@ body{
    .quote-title{
     font-size:42px !important;
    }
-    }
- form{
+   .or{
+    text-align:center
+   }
+   #residential.appointment-btn{
+    dispay: block;
+    width: fit-content;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    white-space:normal;
+   }
+     form{
     max-width:750px;
     margin:40px auto;
  }
