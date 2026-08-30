@@ -10,64 +10,328 @@
         <link 
         href="https://fonts.googleapis.com/css2?family=Creepster&display=swap"rel="stylesheet">      
         <link rel="stylesheet" href="style.css">
+        <style>
+form {
+    max-width: 800px;
+    width: 90%;
+    margin: 40px auto;
+}
+
+form > div,
+#detailingOptions > div,
+#powerWashingOptions > div {
+    margin-bottom: 22px;
+}
+
+form label,
+form p {
+    display: block;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"],
+form select,
+form textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.checkbox-section label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.checkbox-section input[type="checkbox"] {
+    width: auto;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+form textarea {
+    min-height: 90px;
+}
+
+form button {
+    font-size: 20px;
+    padding: 12px 24px;
+}
+</style>
         </head>
         <body>
           <div class="quote-logo" style="position: absolute; left: 0; width: 100%; height: auto; z-index: 0; opacity: .25; pointer-events: none;">
             <img src="grime_reaper.jpg" alt="The Grime Reaper Logo" style="width: 100%; height: 100%; object-fit: cover;">
           </div>
          <h1 class="quote-title"
-            style="font-size: 80px;"> The Grime Reaper Quote
+            style="font-size: 80px;"> The Grime Reaper Quote</h1>
           <nav>
                <a href="index.html">← Back to Home</a>
                 </nav>             
          <form 
              action="https://formsubmit.co/thegrimereaper48@gmail.com"method="POST" style="position: relative; z-index: 2;font-family: Arial, sans-serif">
             <input type="hidden" name="_next" value="https://talexan4.github.io/grime-reaper-website/">
-            <div>
-            <label>Name:</label>
-            <input type="text" name="Name">
-          </div>
+            <!-- BASIC INFORMATION -->
+<div>
+    <label>Name:</label>
+    <input type="text" name="Name" required>
+</div>
 
-          <div>
-            <label>Phone:</label>
-            <input type="tel" name="Phone">
-          </div>
+<div>
+    <label>Phone:</label>
+    <input type="tel" name="Phone" required>
+</div>
 
-          <div>
-            <label>Email:</label>
-            <input type="email" name="Email">
-          </div>
-          <div>
-            <label>Facebook:</label>
-            <input type="Facebook" name="Facebook">
-          </div>
-          <div>
-            <label>What do you need done?</label>
-            <textarea name="What do you need done?"></textarea>
-          </div>
-          <div>
-            <label>Vehicle Type</label>
-            <select name="Vehicle Type">
-              <option>Car</option>
-              <option>SUV</option>
-              <option>Truck</option>
-              <option>Boat</option>
-            </select>
-          </div>
-          <div>
-            <label>Preferred contact methods</label>
-            <select name="Preferred Contact Method">
-                <option>Call</option>
-                <option>Text</option>
-                <option>Email</option>
-                <option>Facebook</option>
-            </select>
-          </div> 
-          <div>
-            <button type="submit">Submit Quote Request</button>
-          </div>
+<div>
+    <label>Email:</label>
+    <input type="email" name="Email">
+</div>
+
+
+<!-- MAIN SERVICE CHOICE -->
+<div>
+    <label>What service do you need?</label>
+
+    <select name="Service Type" id="serviceType" onchange="showServiceOptions()">
+        <option value="">Select a service</option>
+        <option value="Detailing">Detailing</option>
+        <option value="Power Washing">Power Washing</option>
+    </select>
+</div>
+
+
+<!-- DETAILING -->
+<div id="detailingOptions" style="display:none;">
+
+    <div>
+        <label>Vehicle Type</label>
+
+        <select name="Vehicle Type">
+            <option value="">Select vehicle type</option>
+            <option value="Car">Car</option>
+            <option value="SUV">SUV</option>
+            <option value="Truck">Truck</option>
+            <option value="Large Van">Large Van</option>
+        </select>
+    </div>
+
+
+    <div>
+        <label>What detailing service do you need?</label>
+
+        <select name="Detailing Service">
+            <option value="">Select detailing service</option>
+            <option value="Interior Detailing">Interior Detailing</option>
+            <option value="Exterior Detailing">Exterior Detailing</option>
+            <option value="Full Detail">Full Detail</option>
+        </select>
+    </div>
+
+
+    <div class="checkbox-section">
+        <p>Would you like any add-ons?</p>
+
+        <label>
+            <input type="checkbox"
+                   name="Pet Hair Removal"
+                   value="Yes">
+            Pet Hair Removal
+        </label>
+
+        <label>
+            <input type="checkbox"
+                   name="Headlight Restoration"
+                   value="Yes">
+            Headlight Restoration
+        </label>
+
+        <label>
+            <input type="checkbox"
+                   name="Engine Bay Detail"
+                   value="Yes">
+            Engine Bay Detail
+        </label>
+
+        <label>
+            <input type="checkbox"
+                   name="Stain Removal"
+                   value="Yes">
+            Stain Removal
+        </label>
+    </div>
+
+</div>
+
+
+<!-- POWER WASHING -->
+<div id="powerWashingOptions" style="display:none;">
+
+    <div>
+        <label>Residential or Commercial?</label>
+
+        <select name="Power Washing Type"
+                id="powerWashingType"
+                onchange="showPowerWashingOptions()">
+
+            <option value="">Select type</option>
+            <option value="Residential">Residential</option>
+            <option value="Commercial">Commercial</option>
+
+        </select>
+    </div>
+
+
+    <!-- RESIDENTIAL -->
+    <div id="residentialOptions"
+         class="checkbox-section"
+         style="display:none;">
+
+        <p>What do you need cleaned?</p>
+
+        <label>
+            <input type="checkbox"
+                   name="Residential Driveway"
+                   value="Yes">
+            Driveway
+        </label>
+
+        <label>
+            <input type="checkbox"
+                   name="Residential Sidewalk"
+                   value="Yes">
+            Sidewalk
+        </label>
+
+        <label>
+            <input type="checkbox"
+                   name="Residential House Wash"
+                   value="Yes">
+            House Wash
+        </label>
+
+        <label>
+            <input type="checkbox"
+                   name="Residential Trash Can Cleaning"
+                   value="Yes">
+            Trash Can Cleaning
+        </label>
+
+    </div>
+
+
+    <!-- COMMERCIAL -->
+    <div id="commercialOptions"
+         class="checkbox-section"
+         style="display:none;">
+
+        <p>What do you need cleaned?</p>
+
+        <label>
+            <input type="checkbox"
+                   name="Commercial Cart Cleaning"
+                   value="Yes">
+            Cart Cleaning
+        </label>
+
+        <label>
+            <input type="checkbox"
+                   name="Commercial Trash Can Cleaning"
+                   value="Yes">
+            Trash Can Cleaning
+        </label>
+
+        <label>
+            <input type="checkbox"
+                   name="Commercial Parking Lot Cleaning"
+                   value="Yes">
+            Parking Lot Cleaning
+        </label>
+
+        <label>
+            <input type="checkbox"
+                   name="Commercial Storefront Cleaning"
+                   value="Yes">
+            Storefront Cleaning
+        </label>
+
+    </div>
+
+</div>
+
+
+<!-- EXTRA INFORMATION -->
+<div>
+    <label>Anything else we should know?</label>
+    <textarea name="Additional Information"></textarea>
+</div>
+
+
+<!-- CONTACT METHOD -->
+<div>
+    <label>Preferred Contact Method</label>
+
+    <select name="Preferred Contact Method">
+        <option value="Call">Call</option>
+        <option value="Text">Text</option>
+        <option value="Email">Email</option>
+    </select>
+</div>
+
+
+<div>
+    <button type="submit">Submit Quote Request</button>
+</div>
         </form>
         </div>
+        <script>
+function showServiceOptions() {
+
+    const service = document.getElementById("serviceType").value;
+
+    const detailing = document.getElementById("detailingOptions");
+    const powerWashing = document.getElementById("powerWashingOptions");
+    const residential = document.getElementById("residentialOptions");
+    const commercial = document.getElementById("commercialOptions");
+
+    detailing.style.display = "none";
+    powerWashing.style.display = "none";
+    residential.style.display = "none";
+    commercial.style.display = "none";
+
+    if (service === "Detailing") {
+        detailing.style.display = "block";
+    }
+
+    if (service === "Power Washing") {
+        powerWashing.style.display = "block";
+    }
+}
+
+
+function showPowerWashingOptions() {
+
+    const type = document.getElementById("powerWashingType").value;
+
+    const residential = document.getElementById("residentialOptions");
+    const commercial = document.getElementById("commercialOptions");
+
+    residential.style.display = "none";
+    commercial.style.display = "none";
+
+    if (type === "Residential") {
+        residential.style.display = "block";
+    }
+
+    if (type === "Commercial") {
+        commercial.style.display = "block";
+    }
+}
+</script>
         </body>
         
        
